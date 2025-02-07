@@ -14,10 +14,10 @@ public class Restaurant {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private String Address;
-    private String phoneNo;
+    private String phoneno;
+    private String address;
     private String email;
-    private String rating;
+    private int rating;
     @OneToMany(mappedBy = "restaurant", cascade = CascadeType.ALL)
     private List<Menu> menu;
 
